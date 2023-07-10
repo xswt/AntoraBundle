@@ -259,9 +259,10 @@ object[type="image/svg+xml"]:not([width]) {
 }
 
 .nav {
-    background: #fafafa;
+    background: #212121;
     position: relative;
     top: 2.5rem;
+    color: white;
     height: calc(100vh - 6rem)
 }
 
@@ -283,7 +284,7 @@ object[type="image/svg+xml"]:not([width]) {
 }
 
 .nav a {
-    color: inherit
+    color: white
 }
 
 .nav .panels {
@@ -389,9 +390,10 @@ html.is-clipped--nav {
 }
 
 .nav-panel-explore {
-    background: #fafafa;
+    background: #212121;
     display: -webkit-box;
     display: -ms-flexbox;
+    /* color: white; */
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -413,7 +415,7 @@ html.is-clipped--nav {
     font-size: .83333rem;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    color: #5d5d5d;
+    color: white;
     -webkit-box-shadow: 0 -1px 0 #e1e1e1;
     box-shadow: 0 -1px 0 #e1e1e1;
     padding: 0 .5rem;
@@ -455,9 +457,10 @@ html.is-clipped--nav {
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
-    -webkit-box-shadow: inset 0 1px 5px #e1e1e1;
-    box-shadow: inset 0 1px 5px #e1e1e1;
-    background: #f0f0f0;
+    /* -webkit-box-shadow: inset 0 1px 5px #e1e1e1; */
+    /* box-shadow: inset 0 1px 5px #e1e1e1; */
+    background: #212121;
+    color: white;
     padding: .5rem .75rem 0;
     margin: 0;
     overflow-y: scroll;
@@ -533,13 +536,15 @@ html.is-clipped--nav {
         -webkit-box-flex: 1;
         -ms-flex: auto;
         flex: auto;
-        min-width: 0
+        min-width: 0;
+        justify-content: space-between;
     }
 
     main>.content {
         display: -webkit-box;
         display: -ms-flexbox;
-        display: flex
+        display: flex;
+        justify-content: space-between;
     }
 
     aside.toc.embedded {
@@ -564,11 +569,11 @@ html.is-clipped--nav {
 }
 
 .toolbar {
-    color: #5d5d5d;
+    color: white;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    background-color: #fafafa;
+    background-color: #212121;
     -webkit-box-shadow: 0 1px 0 #e1e1e1;
     box-shadow: 0 1px 0 #e1e1e1;
     display: -webkit-box;
@@ -720,8 +725,8 @@ a+.breadcrumbs {
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
-    background: -webkit-gradient(linear, left top, left bottom, from(#f0f0f0), to(#f0f0f0)) no-repeat;
-    background: linear-gradient(180deg, #f0f0f0 0, #f0f0f0) no-repeat;
+    background: #212121;
+    color: white;
     padding: 1.375rem 1.5rem .5rem .5rem;
     position: absolute;
     top: 0;
@@ -877,8 +882,8 @@ a+.breadcrumbs {
         -ms-flex: auto;
         flex: auto;
         font-size: .94444rem;
-        margin: 0 2rem;
-        max-width: 46rem;
+        /* margin: 0 2rem; */
+        max-width: 56rem;
         min-width: 0
     }
 }
@@ -2034,10 +2039,10 @@ body {
 }
 
 .navbar {
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,105,1) 75%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(90deg, rgba(33,33,33,1) 26%, rgba(0,0,105,1) 59%, rgba(0,212,255,1) 100%);
     color: #fff;
     font-size: .88889rem;
-    height: 3rem;
+    height: 3.5rem;
     position: fixed;
     top: 0;
     width: 100%;
@@ -2306,7 +2311,7 @@ body {
 
     .navbar-menu .navbar-link:hover,
     .navbar-menu a.navbar-item:hover {
-        background: #f5f5f5
+        background: #f5f5f500
     }
 }
 
